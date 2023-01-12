@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+li.highlight a {
+  font-weight: bold;
+}
