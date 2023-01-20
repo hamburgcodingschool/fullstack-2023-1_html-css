@@ -3,28 +3,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nested List</title>
+    <title>Horizontal Navigation</title>
     <style>
-      body {
-        font-size: 30px;
+      .navigation {
+        background-color: aqua;
+        padding: 20px;
       }
-      #tree-view li + ul li:first-child {
-        color: red;
+
+      .navigation li {
+        display: inline-block;
+        padding: 0 2vw;
+      }
+
+      .navigation li:first-child {
+        padding-left: 0;
       }
     </style>
   </head>
   <body>
     <nav>
-      <ul id="tree-view">
+      <ul class="navigation">
         <li>Admin</li>
         <li>Home</li>
         <li>All Artists</li>
         <li>Rock</li>
-        <ul>
-          <li>Hardrock</li>
-          <li>Punkrock</li>
-          <li>Kuschelrock</li>
-        </ul>
         <li>Pop</li>
         <li>R&B</li>
         <li>Punk</li>
