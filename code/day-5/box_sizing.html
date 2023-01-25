@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        width: 500px;
+        height: 250px;
+        padding: 100px;
+        border: 2px solid gray;
+        margin: 0 0 10px 0;
+      }
+      body div:first-child {
+        box-sizing: content-box;
+      }
+      body div:last-child {
+        overflow: scroll;
+        font-size: 30px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, optio
+      distinctio quaerat itaque ut praesentium animi? Accusamus, cumque, ipsum
+      dolores molestiae distinctio dicta ab ullam, saepe ea praesentium alias
+      iure!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum
+      veritatis ipsam nemo nulla veniam temporibus culpa saepe eveniet
+      voluptates quae ea at accusantium aspernatur ipsum distinctio voluptas,
+      maiores excepturi? Lorem ipsum, dolor sit amet consectetur adipisicing
+      elit. Iure, pariatur obcaecati dolore alias ut quod labore aperiam
+      consequatur delectus ab error tempore ratione laborum deserunt porro amet
+      maiores omnis mollitia.
+    </div>
+  </body>
+</html>
