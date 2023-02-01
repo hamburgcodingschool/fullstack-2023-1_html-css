@@ -5,28 +5,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  color: black;
 
   /*visual quality*/
   font-size: 60px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-#mobile {
-  display: none;
-}
-#fullwidth {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) and (min-width: 325px) and (orientation: portrait) {
   body {
-    font-size: 10px;
+    color: blue;
+    font-weight: bold;
   }
-  #mobile {
-    display: block;
-  }
+}
 
-  #fullwidth {
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  nav {
     display: none;
   }
-} 
+}
+
+@media screen and (hover: none) {
+}
