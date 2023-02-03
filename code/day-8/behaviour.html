@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>behaviour</title>
+    <style>
+      body {
+        font-size: 30px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 5px solid red;
+        cursor: pointer;
+      }
+      span {
+        display: inline-block;
+        background-color: yellow;
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        opacity: 0;
+        position: absolute;
+        bottom: -80px;
+        left: 80px;
+        transition: all 0.5s ease-in-out;
+      }
+      .link-container {
+        position: relative;
+      }
+      .link-container:hover span {
+        opacity: 1;
+        bottom: -110px;
+        left: 110px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="link-container">
+      <a href="https://spiegel.de">Gehe zu spiegel.de</a>
+      <span class="tooltip">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem
+        consequatur repellat obcaecati atque officiis maxime illo ipsam et est,
+        quidem odio? Deserunt, laborum quidem eaque architecto voluptatum hic
+        atque?
+      </span>
+    </div>
+  </body>
+</html>

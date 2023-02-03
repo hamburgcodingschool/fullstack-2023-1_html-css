@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidebar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #333333;
+        transition: all 1s;
+      }
+      body:not(:hover) {
+        background-color: #ffffff;
+      }
+      aside {
+        width: 300px;
+        height: 100vh;
+        background-color: #cccccc;
+        position: absolute;
+        left: -280px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+      }
+      aside:hover {
+        left: 0;
+        background-color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <aside></aside>
+  </body>
+</html>
